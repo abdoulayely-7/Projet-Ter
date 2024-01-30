@@ -1,0 +1,9 @@
+php artisan tinker
+>>> $user = new App\Models\User;
+>>> $user->prenom = 'Admin'; // Remplacez par le prénom souhaité
+>>> $user->nom = 'Admin'; // Remplacez par le nom souhaité
+>>> $user->email = 'admin@example.com'; // Remplacez par l'email souhaité
+>>> $user->password = Hash::make('password'); // Remplacez par le mot de passe souhaité
+>>> $user->is_admin = true;
+>>> $user->save();
+>>> exit
